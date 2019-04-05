@@ -1,3 +1,6 @@
-#!/user/bin/env ruby
+#!/usr/bin/env ruby
 
-puts "Hello World!"
+require './lib/coindesk_environment'
+
+CoindeskScraper::CLI.new.call
+
