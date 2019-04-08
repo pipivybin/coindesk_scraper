@@ -65,7 +65,7 @@
     puts ""
     puts "#{doc.css("div.timestamp span").text}"
     puts ""
-    puts "#{doc.css("section.article-content").text}"
+    puts "#{doc.css("div.entry-content").text.strip}"
     puts ""
 
   end
