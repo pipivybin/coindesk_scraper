@@ -54,7 +54,7 @@
  def self.chosen_article(input)
   chosen = input.to_i
   link = self.all[chosen-1].url
-  
+  binding.pry
   doc = Nokogiri::HTML(open(link))
   puts "#{doc.css("div.meta h1").text}"
   puts ""

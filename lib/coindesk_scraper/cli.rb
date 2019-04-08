@@ -4,6 +4,7 @@ class CoindeskScraper::CLI
   
   def call 
     puts "Today's top 10 news are here!"
+    puts ""
     make_list
     list
     menu
@@ -33,7 +34,7 @@ class CoindeskScraper::CLI
         puts "Thank you for visiting us! You have a wonderful day!"
         CoindeskScraper::Articles.clear_all
         break
-      elsif (1..10) === input.to_i
+      elsif (1..CoindeskScraper::Articles.all.length) === input.to_i
         puts "Here's No.#{input.to_i} article for you!"
         puts ""
         CoindeskScraper::Articles.chosen_article(input)
@@ -41,7 +42,7 @@ class CoindeskScraper::CLI
         puts list
         
       else 
-        puts "Please input a number between 1 - 10 or type exit."
+        puts "Please input a number between 1 - #{CoindeskScraper::Articles.all.length} or type exit."
         puts ""
         
       end
