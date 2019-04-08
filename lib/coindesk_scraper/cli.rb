@@ -30,7 +30,7 @@ class CoindeskScraper::CLI
       puts "Tell me what you would like to do next:"
       puts "- You can choose a number from the list to read more"
       puts "- You can review the list by typing list"
-      puts "- Or you can type exit to exit"
+      puts "- Or you can exit by typing exit"
       puts ""
       input = gets.strip.chomp.downcase
     

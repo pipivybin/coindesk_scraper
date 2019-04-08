@@ -1,21 +1,5 @@
 How coindesk_scraper works:
 
-user types coindesk_scraper
+This is a gem that scrapes the home page of Coindesk and list out all the news articles.
 
-show a list of most recent news
-
-# Title - Time - URL
-
-"Which news article would you want to read more about?"
-
-User input: # or key words or exit
-
-Output: 
-- #
-  - the according news article
-    - option to exit, read next, or go back to the list page or key words?
-
-- key words
-  - list of articles: # Title - Time - URL (how do i search within the articles too?)
-    - ask for # to read more or return back to the list or exit
-      - if #: option to return one level up or exit
+User can navigate the CLI by typing a number, or keyword "list" or "exit"
