@@ -3,11 +3,15 @@ require 'pry'
 class CoindeskScraper::CLI
   
   def call 
-    puts "Today's top 10 news are here!"
-    puts ""
+    greeting
     make_list
     list
     menu
+  end
+  
+  def greeting
+    puts "Today's top #{CoindeskScraper::Articles.all.length} news are here!"
+    puts ""
   end
   
   def make_list
@@ -40,15 +44,10 @@ class CoindeskScraper::CLI
         CoindeskScraper::Articles.chosen_article(input)
       elsif input == "list"
         puts list
-        
       else 
         puts "Please input a number between 1 - #{CoindeskScraper::Articles.all.length} or type exit."
         puts ""
-        
       end
     end
   end
-  
-  
-  
 end

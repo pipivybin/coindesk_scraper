@@ -48,7 +48,6 @@
       @article_streams.time = x.css("div.meta div.time time").attr("datetime").value
       @article_streams.url = x.attr("href")
     end
-
  end
  
  def self.chosen_article(input)
@@ -67,12 +66,6 @@
     puts ""
     puts "#{doc.css("div.entry-content").text.strip}"
     puts ""
-
   end
  end
-  
-    
-    
-  
-  
 end
