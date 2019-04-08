@@ -1,10 +1,10 @@
 # CoindeskScraper
 
-Hello world!
+How coindesk_scraper works:
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/coindesk_scraper`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Ruby Gem provides a CLI to view the top articles on the Coindesk website. It can also show the full article as per the user's choice.
 
-TODO: Delete this and the text above, and describe your gem
+User can navigate the CLI by typing a number or keyword "list" or "exit" according to the instruction.
 
 ## Installation
 
@@ -22,9 +22,6 @@ Or install it yourself as:
 
     $ gem install coindesk_scraper
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
@@ -32,9 +29,15 @@ After checking out the repo, run `bin/setup` to install dependencies. You can al
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+## Usage
+
+Type the below and follow the on screen prompts.
+
+$ coindesk_scraper
+
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/'charming-callee-1492'/coindesk_scraper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pipivybin/coindesk_scraper. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -42,4 +45,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the CoindeskScraper project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'charming-callee-1492'/coindesk_scraper/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the CoindeskScraper project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/pipivybin/coindesk_scraper/blob/master/CODE_OF_CONDUCT.md).
