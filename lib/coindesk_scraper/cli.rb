@@ -7,7 +7,9 @@ class CoindeskScraper::CLI
   end
   
   def list
-    puts "No. Title - Time - URL"
+    CoindeskScraper::Articles.all.each_with_index do |one_article, index|
+      puts "No #{index+1}. one_article.title - one_article.time - one_article.url"
+    end
   end
   
   def menu
