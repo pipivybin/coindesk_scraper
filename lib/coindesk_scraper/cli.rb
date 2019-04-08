@@ -3,8 +3,8 @@ require 'pry'
 class CoindeskScraper::CLI
   
   def call 
-    greeting
     make_list
+    greeting
     list
     menu
   end
