@@ -63,10 +63,11 @@
   else
     puts "#{doc.css("div.meta h1").text}"
     puts ""
-    puts "#{doc.css("i.far.fa-clock span").text}"
+    puts "#{doc.css("div.timestamp span").text}"
     puts ""
     puts "#{doc.css("section.article-content").text}"
     puts ""
+
   end
  end
   
